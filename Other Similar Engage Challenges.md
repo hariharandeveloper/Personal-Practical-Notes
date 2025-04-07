@@ -238,11 +238,10 @@ Solution: abc123
 29). Find the IOT publish message.
 - Filter with mqtt. sample format: High4Temp
 
-30). A file named Hash.txt has been uploaded through DVWA (http://172.20.0.16:8080/DVWA). The file is located in the “C:\wamp64\www\DVWA\hackable\uploads\” directory. Access the file and crack the MD5 hash to reveal the original message. Enter the decrypted message as the answer. You can log into the DVWA using the credentials admin/password. Answer: Secret123 1. Open the url given and login with given details. Task-8 2. After login http://172.20.0.16/DWVA/hackable/uploads/ 3. They you see files open it and copy the hash value go to the hashes.com/en/decrypt/hash. Or try below. 4. hash-identifier paste the text and see the type of hash and then hashcat -h | grep MD5 5. hashcat -m 0 hash.txt /Desktop/word list/urser.txt Sample format Thr3@t0n3
+30). A file named Hash.txt has been uploaded through DVWA (http://172.20.0.16:8080/DVWA). The file is located in the “C:\wamp64\www\DVWA\hackable\uploads\” directory. Access the file and crack the MD5 hash to reveal the original message. Enter the decrypted message as the answer. You can log into the DVWA using the credentials admin/password. Answer: Secret123 1. Open the url given and login with given details. Task-8 2. After login http://172.20.0.16/DWVA/hackable/uploads/ 3. They you see files open it and copy the hash value go to the hashes.com/en/decrypt/hash Sample format Thr3@t0n3. Or try below. 4. hash-identifier paste the text and see the type of hash and then hashcat -h | grep MD5 5. hashcat -m 0 hash.txt /Desktop/word list/urser.txt 
 
 31). Find the text in hidden file new .txt
-Use bintext decoder. Sample format : T3ch!eT1g3r
-
+Use SNOW decoder. 
 32). Find the mercury sevices version running on this ip.
 nmap -sV ip. Sample format 4.62
 
